@@ -1,0 +1,134 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #5B2EFF, black);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg,#0066ff,#ff5e3a);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.hero img {
+  width: 220px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* SECTION */
+.section {
+  display: flex;
+  padding: 60px;
+  gap: 40px;
+}
+
+/* IMAGE */
+.side-img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+}
+
+/* TITLE */
+.logo-text {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg,#ff5e3a,#0066ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* INSTAGRAM */
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.insta-item {
+  transform: scale(0.95);
+  transition: 0.3s;
+}
+
+.insta-item:hover {
+  transform: scale(1);
+}
+
+/* METRICS */
+.metrics {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(45deg,#0066ff,#5B2EFF);
+}
+
+.metrics h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.stat span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px;
+  text-align: center;
+}
+
+.contact a {
+  display: block;
+  margin-top: 10px;
+  color: #ff5e3a;
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .insta-grid {
+    grid-template-columns: 1fr;
+  }
+}
