@@ -42,9 +42,8 @@ body {
 
 /* SECTION */
 .section {
-  display: flex;
-  padding: 60px;
-  gap: 40px;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 /* IMAGE */
@@ -55,9 +54,9 @@ body {
 
 /* RIGHT */
 .right {
-  flex: 1;
+  max-width: 900px;
+  margin: auto;
 }
-
 /* TITLE */
 .logo-text {
   font-size: 2rem;
