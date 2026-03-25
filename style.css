@@ -35,9 +35,10 @@ body {
 }
 
 .hero img {
-  width: 220px;
-  border-radius: 15px;
-  margin-top: 20px;
+  width: 350px;          /* increase size */
+  max-width: 90%;        /* responsive */
+  border-radius: 20px;
+  margin-top: 25px;
 }
 
 /* SECTION */
